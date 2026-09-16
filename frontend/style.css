@@ -99,7 +99,7 @@ main {
   padding: 36px 32px;
   border-radius: var(--radius);
   box-shadow: 0 4px 20px rgba(30, 58, 138, 0.06);
-  text-align: center;
+  text-align: left;
 }
 .panel.active { display: block; }
 .panel h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; }
@@ -108,7 +108,7 @@ main {
 /* ---------- Form (centered & symmetric) ---------- */
 .form-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
   flex-wrap: wrap;
 }
