@@ -4,25 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>📊 Data Manager</h1>
-    <span id="backend-badge" class="badge">…</span>
+    <div class="header-inner">
+      <div class="brand">
+        <span class="logo">DM</span>
+        <span class="brand-name">Data Manager</span>
+      </div>
+      <span id="backend-badge" class="badge">…</span>
+    </div>
   </header>
 
   <nav class="tabs">
-    <button class="tab active" data-tab="user">User</button>
-    <button class="tab" data-tab="jb">JB</button>
-    <button class="tab" data-tab="terminasi">Terminasi</button>
-    <button class="tab" data-tab="sarpen">Sarpen</button>
+    <div class="tabs-inner">
+      <button class="tab active" data-tab="user">User</button>
+      <button class="tab" data-tab="jb">JB</button>
+      <button class="tab" data-tab="terminasi">Terminasi</button>
+      <button class="tab" data-tab="sarpen">Sarpen</button>
+    </div>
   </nav>
 
   <main>
     <!-- USER -->
     <section class="panel active" id="panel-user">
-      <h2>Cari User (berdasarkan ID &amp; SID)</h2>
+      <h2>Cari User</h2>
+      <p class="subtitle">Berdasarkan ID &amp; SID</p>
       <div class="form-row">
         <input type="text" id="user-ID" placeholder="ID" />
         <input type="text" id="user-SID" placeholder="SID" />
@@ -35,6 +46,7 @@
     <!-- JB -->
     <section class="panel" id="panel-jb">
       <h2>Cari data JB</h2>
+      <p class="subtitle">Berdasarkan IDJB</p>
       <div class="form-row">
         <input type="text" id="jb-IDJB" placeholder="IDJB (mis. GTOJ064)" />
         <button onclick="doSearch('jb')">Cari</button>
@@ -46,8 +58,9 @@
     <!-- TERMINASI -->
     <section class="panel" id="panel-terminasi">
       <h2>Cari data Terminasi</h2>
+      <p class="subtitle">Berdasarkan TERMINASI</p>
       <div class="form-row">
-        <input type="text" id="terminasi-TERMINASI" placeholder="TERMINASI (mis. TERM-A)" />
+        <input type="text" id="terminasi-TERMINASI" placeholder="TERMINASI (mis. Serpo Isimu)" />
         <button onclick="doSearch('terminasi')">Cari</button>
       </div>
       <p class="hint">Menampilkan semua data + kolom DESTINATION.</p>
@@ -57,6 +70,7 @@
     <!-- SARPEN -->
     <section class="panel" id="panel-sarpen">
       <h2>Cari data Sarpen</h2>
+      <p class="subtitle">Berdasarkan SITE</p>
       <div class="form-row">
         <input type="text" id="sarpen-SITE" placeholder="SITE (mis. SITE-A)" />
         <button onclick="doSearch('sarpen')">Cari</button>
