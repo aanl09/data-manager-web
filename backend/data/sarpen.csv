@@ -1,0 +1,3 @@
+No,SITE,POP,Alamat POP,Type POP,ID Pelanggan,Jenis PLN,Nomor Meter,Merk Genset 1,Kap Genset 1,Merk Genset 2,Kap Genset 2,Merk EA,Type EA,Status EA,Merk Baterai,Kapasitas Baterai,Jumlah Baterai
+1,SITE-A,POP Isimu,Jl. Trans Sulawesi No.1,Indoor,PLN123456,Prabayar,MTR0001,Cummins,20 kVA,Perkins,15 kVA,Delta,DPR-48,Normal,Narada,100 Ah,24
+2,SITE-B,POP Kwandang,Jl. Kwandang Raya No.5,Outdoor,PLN654321,Pascabayar,MTR0002,Cummins,30 kVA,-,-,Eltek,Flatpack2,Normal,Narada,150 Ah,24

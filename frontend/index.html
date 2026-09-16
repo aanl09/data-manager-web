@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📊 Data Manager</h1>
+    <span id="backend-badge" class="badge">…</span>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="user">User</button>
+    <button class="tab" data-tab="jb">JB</button>
+    <button class="tab" data-tab="terminasi">Terminasi</button>
+    <button class="tab" data-tab="sarpen">Sarpen</button>
+  </nav>
+
+  <main>
+    <!-- USER -->
+    <section class="panel active" id="panel-user">
+      <h2>Cari User (berdasarkan ID &amp; SID)</h2>
+      <div class="form-row">
+        <input type="text" id="user-ID" placeholder="ID" />
+        <input type="text" id="user-SID" placeholder="SID" />
+        <button onclick="doSearch('user')">Cari</button>
+      </div>
+      <p class="hint">Isi salah satu atau keduanya. Kosongkan semua untuk menampilkan semua user.</p>
+      <div class="result" id="result-user"></div>
+    </section>
+
+    <!-- JB -->
+    <section class="panel" id="panel-jb">
+      <h2>Cari data JB</h2>
+      <div class="form-row">
+        <input type="text" id="jb-IDJB" placeholder="IDJB (mis. GTOJ064)" />
+        <button onclick="doSearch('jb')">Cari</button>
+      </div>
+      <p class="hint">Menampilkan semua data (Kabel 1..6 berisi daftar user/titik) pada IDJB tersebut.</p>
+      <div class="result" id="result-jb"></div>
+    </section>
+
+    <!-- TERMINASI -->
+    <section class="panel" id="panel-terminasi">
+      <h2>Cari data Terminasi</h2>
+      <div class="form-row">
+        <input type="text" id="terminasi-TERMINASI" placeholder="TERMINASI (mis. TERM-A)" />
+        <button onclick="doSearch('terminasi')">Cari</button>
+      </div>
+      <p class="hint">Menampilkan semua data + kolom DESTINATION.</p>
+      <div class="result" id="result-terminasi"></div>
+    </section>
+
+    <!-- SARPEN -->
+    <section class="panel" id="panel-sarpen">
+      <h2>Cari data Sarpen</h2>
+      <div class="form-row">
+        <input type="text" id="sarpen-SITE" placeholder="SITE (mis. SITE-A)" />
+        <button onclick="doSearch('sarpen')">Cari</button>
+      </div>
+      <p class="hint">Menampilkan semua data pada SITE tersebut.</p>
+      <div class="result" id="result-sarpen"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

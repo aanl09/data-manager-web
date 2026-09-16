@@ -1,0 +1,4 @@
+ID,SID,PIC Nama,PIC Nomor,Tikor User,Terminasi,Port,ODF,Jarak N to N,JB yg dilewati,Wilayah Serpo
+1,SID001,Budi Santoso,08111111111,"0.5781, 123.0460",Serpo Isimu,et-0/0/2,ODF-01,1.2 km,GTOJ064,Isimu
+2,SID002,Siti Aminah,08122222222,"0.5790, 123.0471",Serpo Isimu,et-0/0/3,ODF-02,0.9 km,GTOJ064,Isimu
+3,SID003,Andi Wijaya,08133333333,"0.6001, 123.1000",Serpo Kwandang,xe-1/0/1,ODF-05,2.4 km,GTOJ065,Kwandang
