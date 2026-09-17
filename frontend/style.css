@@ -37,17 +37,6 @@ header {
   gap: 16px;
 }
 .brand { display: flex; align-items: center; gap: 12px; }
-.logo {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.16);
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-}
 .brand-name { font-size: 19px; font-weight: 700; letter-spacing: -0.2px; }
 .badge {
   background: rgba(255, 255, 255, 0.16);
@@ -59,7 +48,7 @@ header {
   letter-spacing: 0.6px;
 }
 
-/* ---------- Tabs (centered) ---------- */
+/* ---------- Tabs (left-aligned, sejajar dengan brand & konten) ---------- */
 .tabs {
   background: var(--card);
   border-bottom: 1px solid var(--border);
@@ -68,7 +57,7 @@ header {
   max-width: var(--maxw);
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
   padding: 10px 24px 0;
 }
