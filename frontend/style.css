@@ -59,7 +59,7 @@ header {
   letter-spacing: 0.6px;
 }
 
-/* ---------- Tabs (centered) ---------- */
+/* ---------- Tabs (left-aligned, sejajar dengan brand & konten) ---------- */
 .tabs {
   background: var(--card);
   border-bottom: 1px solid var(--border);
@@ -68,7 +68,7 @@ header {
   max-width: var(--maxw);
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
   padding: 10px 24px 0;
 }
